@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Picturefill - Demo</title>
+		
+		<script>
+			// Picture element HTML shim|v it for old IE (pairs with Picturefill.js)
+			document.createElement( "picture" );
+		</script>
+		<script async="true" src="images/picturefill.js"></script>
+	</head>
+	<body>
+		
+		
+
+<picture>
+	<!--[if IE 9]><video style="display: none;"><![endif]-->
+	<source srcset="images/desktop.jpg" media="(min-width: 1000px)">
+	<source srcset="images/tablet.jpg" media="(min-width: 800px)" >
+	<!--[if IE 9]></video><![endif]-->
+	<img srcset="images/Mobile.jpg" title="small">
+</picture>
+
+	</body>
+</html>
